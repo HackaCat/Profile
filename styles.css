@@ -15,18 +15,18 @@
 
 @font-face {
     font-family: "DankMono-Italic";
-    src: url("custom-font/DankMono-Italic.otf");
+    src: url("custom-font/DankMono-Italic.otf"),
     url("custom-font/DankMono-Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "DankMono-Regular";
-    src: url("custom-font/DankMono-Regular.otf");
+    src: url("custom-font/DankMono-Regular.otf"),
     url("custom-font/DankMono-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: "DankMono-Bold";
-    src: url("custom-font/DankMono-Bold.otf");
+    src: url("custom-font/DankMono-Bold.otf"),
     url("custom-font/DankMono-Bold.otf") format("opentype");
 }
 /*
@@ -37,7 +37,8 @@ body {
     line-height: 1.7em;
     color: var(--text-color);
     font-size: 13px;
-    font-family: "DankMono-Regular";;
+    font-family: "DankMono-Regular";
+    background-color: var(--bg-color);
 }
 
 h1,
@@ -119,16 +120,10 @@ a.pure-button-primary {
 .home-menu {
     padding: 0.5em;
     text-align: center;
-    box-shadow: 0 1px 1px rgba(9, 31, 44, 0.10);
-}
-.home-menu {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     background: var(--dark-purple);
-}
-.pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
-    border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 4;
+    background: var(--text-color);
+    color: var(--bg-color);
 }
 
 .home-menu .pure-menu-heading {
@@ -250,6 +245,21 @@ a.pure-button-primary {
     background: #111;
     width: 100%;
 }
+
+.rounded-corner {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("img/hello.png");
+    background-position: 45% 12%;
+    margin: 0 auto;
+    background-color: white;
+}
+.content-wrapper.intro > .content {
+    margin: 0 auto;
+    width: fit-content;
+  }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
