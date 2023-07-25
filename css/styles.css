@@ -2,32 +2,23 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    --bg-color: #091f2c;
-    --main-color: #f5b1cc;
-    --caret-color: #93e8d3;
-    --sub-color: #93e8d3;
-    --text-color: #a288d9;
-    --error-color: #e45c96;
-    --error-extra-color: #e45c96;
-    --colorful-error-color: #00b398;
-    --colorful-error-extra-color: #e45c96;
 }
 
 @font-face {
     font-family: "DankMono-Italic";
-    src: url("custom-font/DankMono-Italic.otf"),
-    url("custom-font/DankMono-Italic.otf") format("opentype");
+    src: url("../../custom-font/DankMono-Italic.otf"),
+    url("../../custom-font/DankMono-Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "DankMono-Regular";
-    src: url("custom-font/DankMono-Regular.otf"),
-    url("custom-font/DankMono-Regular.otf") format("opentype");
+    src: url("../custom-font/DankMono-Regular.otf"),
+    url("../custom-font/DankMono-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: "DankMono-Bold";
-    src: url("custom-font/DankMono-Bold.otf"),
-    url("custom-font/DankMono-Bold.otf") format("opentype");
+    src: url("../custom-font/DankMono-Bold.otf"),
+    url("../custom-font/DankMono-Bold.otf") format("opentype");
 }
 /*
  * -- BASE STYLES --
@@ -35,10 +26,10 @@
  */
 body {
     line-height: 1.7em;
-    color: var(--text-color);
+    color: #a288d9;
     font-size: 13px;
     font-family: "DankMono-Regular";
-    background-color: var(--bg-color);
+    background-color: #091f2c;
 }
 
 h1,
@@ -48,7 +39,7 @@ h4,
 h5,
 h6,
 label {
-    color: var(--main-color);
+    color: #f5b1cc;
 }
 
 .pure-img-responsive {
@@ -121,9 +112,8 @@ a.pure-button-primary {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
-    background: var(--dark-purple);
-    background: var(--text-color);
-    color: var(--bg-color);
+    background: #a288d9;
+    color: #091f2c;
 }
 
 .home-menu .pure-menu-heading {
@@ -137,7 +127,7 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: var(--mint);
+    color: #93e8d3;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -251,7 +241,7 @@ a.pure-button-primary {
     width: 300px;
     border-radius: 50%;
     overflow: hidden;
-    background-image: url("img/hello.png");
+    background-image: url("../img/hello.png");
     background-position: 45% 12%;
     margin: 0 auto;
     background-color: white;
